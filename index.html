@@ -2,13 +2,15 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Verificador de Velocidade</title>
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Montserrat:wght@100&family=Oswald:wght@200..700&display=swap" rel="stylesheet">
 </head>
-<body>
-    <!-- Atividade igor, usar o eslint 
+<body class="body-background">
+      <!-- Atividade igor, usar o eslint 
         Crie um sistema de verificação de velocidade eletrônica que cantenha os seguintes requisitos: 
     -campo  de input para informar a velocidade (km/h) 
     -botão para verificar 
@@ -17,12 +19,17 @@
     - ao passar de 60k, deve informar que o conduot ultrapassou a velocidade via e foi multado. A tela deve ficar com backgound vermelhor 
     - se a velocidade for informar a 60km a tela deve ficar verde, informado ao condutor que foi multado -->
     <main class="main">
-    <section class="box">
-        <span>Sistema de verificação eletrônica</span>
-        <label for="" id="label"> Informe a velocidade (KM/H)</label>
-        <input type="text" id="input">
-    </section>
+        <span class="titulo">Sistema de verificação</span>
+        <section class="box"> 
+            <label for="" > Informe a velocidade</label>
+            <input type="text" class="input" id="velocidade">
+        </section>
+        <button class="button" id="btn">Verificar</button>
+
     </main>
+    <div id="respVerificada"> </div>
+
+
     <script src="./script.js"></script>
 </body>
 </html>
